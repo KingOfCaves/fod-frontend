@@ -1,0 +1,78 @@
+@mixin border-mixin($light-color, $dark-color) {
+	&::before {
+		@include border-properties-light($light-color);
+	}
+
+	&::after {
+		@include border-properties-dark($dark-color);
+	}
+}
+
+@mixin border-properties {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+@mixin border-properties-light($color) {
+	@include border-properties;
+	border-top: 1px solid $color;
+	border-left: 1px solid $color;
+}
+@mixin border-properties-dark($color) {
+	@include border-properties;
+	border-right: 1px solid $color;
+	border-bottom: 1px solid $color;
+}
+
+@mixin titlebar-component-properties {
+	position: relative;
+	height: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.window {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 40rem;
+	height: 40rem;
+
+	&__titlebar {
+		display: flex;
+		height: 18px;
+		background-color: #c2c2c2;
+
+		&__menu {
+			width: 18px;
+			@include titlebar-component-properties;
+			@include border-mixin(var(--border-light), var(--border-dark));
+		}
+
+		&__header {
+			flex-grow: 1;
+			@include titlebar-component-properties;
+			@include border-mixin(var(--border-light), var(--border-dark));
+		}
+
+		&__exit {
+			width: 18px;
+			@include titlebar-component-properties;
+			@include border-mixin(var(--border-light), var(--border-dark));
+		}
+	}
+}
+
+.window__border {
+	position: absolute;
+	inset: -5px -5px;
+}
+
+.window__content {
+	background-color: mediumpurple;
+	width: 100%;
+	height: 100%;
+}

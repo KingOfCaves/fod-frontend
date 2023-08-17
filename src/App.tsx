@@ -1,6 +1,10 @@
+import Window from './components/Window.tsx'
+
 function App() {
     return (
-        <></>
+        <>
+            <Window />
+        </>
     )
 }
 
