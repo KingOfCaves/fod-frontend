@@ -1,17 +1,38 @@
-import WindowBorder from './WindowBorder.tsx'
-import WindowTitlebar from './WindowTitlebar.tsx'
+import WindowBorder from './WindowBorder.tsx';
+import WindowTitlebar from './WindowTitlebar.tsx';
+import { useMemo } from 'react';
 
-function Window() {
-    const [light, medium, dark] = ['', '', '']
-    console.log(light, medium, dark)
-
-    return (
-        <div className="window">
-            <WindowBorder />
-            <WindowTitlebar />
-            <div className="window__content"></div>
-        </div>
-    )
+interface WindowProps {
+    uid: string;
+    color?: string;
+    width?: string;
+    height?: string;
+    engraved?: boolean;
+    title?: string;
+    children?: string | React.ReactNode;
 }
 
-export default Window
+function Window(props: WindowProps) {
+    const classConcat = useMemo(() => {
+        const classArr = ['window', props.engraved && 'window--engraved'];
+        return classArr.join(' ').trim();
+    }, [props.engraved]);
+
+    return (
+        <div
+            key={`${props.uid}_window`}
+            style={
+                {
+                    '--border-medium': props.color
+                } as React.CSSProperties
+            }
+            className={classConcat}
+        >
+            <WindowBorder key={`${props.uid}_border`} />
+            {props.title && <WindowTitlebar>{props.title}</WindowTitlebar>}
+            <div className="window__content">{props.children}</div>
+        </div>
+    );
+}
+
+export default Window;

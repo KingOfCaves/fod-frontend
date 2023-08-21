@@ -1,5 +1,6 @@
 # .prettierrc or .prettierrc.yaml
-trailingComma: "es5"
+trailingComma: "none"
 tabWidth: 4
-semi: false
+semi: true
 singleQuote: true
+singleAttributePerLine: true

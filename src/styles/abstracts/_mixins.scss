@@ -1,0 +1,41 @@
+// WINDOW BORDER MIXINS
+// WINDOW BORDER MIXINS
+// WINDOW BORDER MIXINS
+
+@mixin border-mixin($light-color, $dark-color) {
+	&::before {
+		@include border-properties-light($light-color);
+	}
+
+	&::after {
+		@include border-properties-dark($dark-color);
+	}
+}
+
+@mixin border-properties {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+@mixin border-properties-light($color) {
+	@include border-properties;
+	z-index: 1;
+	border-top: 1px solid $color;
+	border-left: 1px solid $color;
+}
+
+@mixin border-properties-dark($color) {
+	@include border-properties;
+	border-right: 1px solid $color;
+	border-bottom: 1px solid $color;
+}
+
+@mixin titlebar-component-properties {
+	position: relative;
+	height: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
