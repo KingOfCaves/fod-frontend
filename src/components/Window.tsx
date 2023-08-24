@@ -20,7 +20,6 @@ function Window(props: WindowProps) {
 
     return (
         <div
-            key={`${props.uid}_window`}
             style={
                 {
                     '--border-medium': props.color
