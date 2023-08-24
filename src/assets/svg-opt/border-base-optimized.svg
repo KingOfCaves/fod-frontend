@@ -1,0 +1,89 @@
+<svg width="50" height="50" version="1.1" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <pattern id="pattern54" width="2" height="5" patternTransform="translate(24)" patternUnits="userSpaceOnUse"
+                 preserveAspectRatio="xMidYMid">
+            <g>
+                <rect width="2" height="2" fill="#ffffff"/>
+                <rect y="2" width="2" height="2" fill="#c2c2c2"/>
+                <rect y="4" width="2" height="1" fill="#454545"/>
+            </g>
+        </pattern>
+        <pattern id="pattern57" width="5" height="2" patternTransform="translate(0,24)" patternUnits="userSpaceOnUse"
+                 preserveAspectRatio="xMidYMid">
+            <g>
+                <rect width="2" height="2" fill="#ffffff"/>
+                <rect x="4" width="1" height="2" fill="#454545"/>
+                <rect x="2" width="2" height="2" fill="#c2c2c2"/>
+            </g>
+        </pattern>
+        <pattern id="pattern61" width="2" height="5" patternTransform="translate(24,45)" patternUnits="userSpaceOnUse"
+                 preserveAspectRatio="xMidYMid">
+            <g>
+                <rect y="3" width="2" height="2" fill="#454545"/>
+                <rect y="1" width="2" height="2" fill="#c2c2c2"/>
+                <rect width="2" height="1" fill="#ffffff"/>
+            </g>
+        </pattern>
+        <pattern id="pattern65" width="5" height="2" patternTransform="translate(45,24)" patternUnits="userSpaceOnUse"
+                 preserveAspectRatio="xMidYMid">
+            <g>
+                <rect x="1" width="2" height="2" fill="#c2c2c2"/>
+                <rect x="3" width="2" height="2" fill="#454545"/>
+                <rect width="1" height="2" fill="#ffffff"/>
+            </g>
+        </pattern>
+    </defs>
+    <g>
+        <g>
+            <path d="m4 4v18h1v-17h17v-1z" fill="#454545"/>
+            <path d="m2 2v20h2v-18h18v-2z" fill="#c2c2c2"/>
+            <path d="m0 0v22h2v-20h20v-2z" fill="#ffffff"/>
+        </g>
+        <g>
+            <path d="m49 1v1h-1v20h1 1v-21h-1zm-21 3v1h18v-1h-18z" fill="#454545"/>
+            <path d="m49 0v1h1v-1h-1zm0 1h-1v1h1v-1zm-1 1h-20v2h18v18h2v-18-2z" fill="#c2c2c2"/>
+            <path d="m28 0v2h20v-1h1v-1h-1-20zm17 5v17h1v-17h-1z" fill="#ffffff"/>
+        </g>
+        <g>
+            <path d="m4 28v18h1v-18zm-2 20v1h-1v1h21v-2z" fill="#454545"/>
+            <path d="m2 28v20h20v-2h-18v-18zm0 20h-1v1h1zm-1 1h-1v1h1z" fill="#c2c2c2"/>
+            <path d="m0 28v21h1v-1h1v-20zm5 17v1h17v-1z" fill="#ffffff"/>
+        </g>
+        <g>
+            <path d="m48 28v20h-20v2h22v-22z" fill="#454545"/>
+            <path d="m46 28v18h-18v2h20v-20z" fill="#c2c2c2"/>
+            <path d="m45 28v17h-17v1h18v-18z" fill="#ffffff"/>
+        </g>
+        <g>
+            <g>
+                <rect x="22" width="1" height="5" fill="#454545"/>
+                <rect y="22" width="5" height="1" fill="#454545"/>
+                <rect y="23" width="5" height="1" fill="#ffffff"/>
+                <rect x="23" width="1" height="5" fill="#ffffff"/>
+            </g>
+            <g>
+                <rect y="26" width="5" height="1" fill="#454545"/>
+                <rect x="22" y="46" width="1" height="4" fill="#454545"/>
+                <rect y="27" width="5" height="1" fill="#ffffff"/>
+                <path d="m22 45v1h1v4h1v-5z" fill="#ffffff"/>
+            </g>
+            <g>
+                <rect x="26" y="46" width="1" height="4" fill="#454545"/>
+                <rect x="46" y="26" width="4" height="1" fill="#454545"/>
+                <path d="m26 45v1h1v4h1v-5z" fill="#ffffff"/>
+                <path d="m45 26v2h5v-1h-4v-1z" fill="#ffffff"/>
+            </g>
+            <g>
+                <rect x="26" width="1" height="5" fill="#454545"/>
+                <rect x="46" y="22" width="4" height="1" fill="#454545"/>
+                <rect x="27" width="1" height="5" fill="#ffffff"/>
+                <path d="m45 22v2h5v-1h-4v-1z" fill="#ffffff"/>
+            </g>
+        </g>
+        <rect x="24" width="2" height="5" fill="url(#pattern54)"/>
+        <rect y="24" width="5" height="2" fill="url(#pattern57)"/>
+        <rect x="24" y="45" width="2" height="5" fill="url(#pattern61)"/>
+        <rect x="45" y="24" width="5" height="2" fill="url(#pattern65)"/>
+    </g>
+</svg>

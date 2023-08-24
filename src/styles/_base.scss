@@ -1,3 +1,11 @@
+:root {
+	--border-light: #ffffff;
+	--border-medium: #c2c2c2;
+	--border-dark: #454545;
+
+	--button-sizing: 18px;
+}
+
 html {
 	font-size: 62.5%;
 	box-sizing: border-box;
@@ -8,6 +16,7 @@ html {
 *::after {
 	box-sizing: inherit;
 	-webkit-user-drag: none;
+	user-select: none;
 }
 
 *:link,
@@ -23,13 +32,33 @@ body,
 }
 
 body {
+	background-color: #056A6A;
 	font-size: 14px;
 	font-family: 'ＭＳ ゴシック', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', '游ゴシック', '游ゴシック体', YuGothic,
-		'Yu Gothic', 'メイリオ', Meiryo, HiraKakuProN-W3, 'TakaoExゴシック', TakaoExGothic, 'MotoyaLCedar',
-		'Droid Sans Japanese', sans-serif;
+	'Yu Gothic', 'メイリオ', Meiryo, HiraKakuProN-W3, 'TakaoExゴシック', TakaoExGothic, 'MotoyaLCedar',
+	'Droid Sans Japanese', sans-serif;
 	font-smooth: never;
 	-webkit-font-smoothing: none;
 	-moz-osx-font-smoothing: grayscale;
 	image-rendering: pixelated;
 	overflow: hidden;
+}
+
+#root {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4rem;
+}
+
+#display {
+	display: flex;
+	position: absolute;
+	top: 10rem;
+	gap: 1rem;
+
+	& > div {
+		width: 6rem;
+		height: 6rem;
+	}
 }

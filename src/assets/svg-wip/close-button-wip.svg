@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="18"
+   height="18"
+   viewBox="0 0 18 18.000001"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="close-button-wip.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="22.627417"
+     inkscape:cx="16.020388"
+     inkscape:cy="11.490485"
+     inkscape:window-width="1613"
+     inkscape:window-height="1538"
+     inkscape:window-x="2218"
+     inkscape:window-y="30"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g14"
+     showgrid="true">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="2"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g10"
+       inkscape:label="background">
+      <g
+         id="g13"
+         inkscape:label="dark">
+        <rect
+           style="fill:#454545;fill-opacity:1"
+           id="rect4"
+           width="17"
+           height="1.000001"
+           x="1"
+           y="17" />
+        <rect
+           style="fill:#454545;fill-opacity:1"
+           id="rect5"
+           width="1"
+           height="16"
+           x="17"
+           y="0.99999994" />
+      </g>
+      <g
+         id="g12"
+         inkscape:label="medium">
+        <rect
+           style="fill:#c2c2c2;fill-opacity:1"
+           id="rect3"
+           width="16"
+           height="15.999999"
+           x="1"
+           y="0.99999994"
+           inkscape:label="rect3" />
+      </g>
+      <g
+         id="g11"
+         inkscape:label="light">
+        <rect
+           style="fill:#ffffff;fill-opacity:1"
+           id="rect1"
+           width="18"
+           height="0.99999994"
+           x="0"
+           y="0" />
+        <rect
+           style="fill:#ffffff;fill-opacity:1"
+           id="rect2"
+           width="1"
+           height="17"
+           x="0"
+           y="0.99999994" />
+      </g>
+    </g>
+    <g
+       id="g9">
+      <g
+         id="g14"
+         inkscape:label="dark">
+        <rect
+           style="fill:#454545;fill-opacity:1"
+           id="rect7"
+           width="1"
+           height="2.9999995"
+           x="10"
+           y="7.9999995" />
+        <rect
+           style="fill:#454545;fill-opacity:1"
+           id="rect15"
+           width="2"
+           height="0.99999952"
+           x="8"
+           y="9.999999" />
+      </g>
+      <g
+         id="g15"
+         inkscape:label="light">
+        <rect
+           style="fill:#ffffff;fill-opacity:1"
+           id="rect8"
+           width="4"
+           height="1.0000001"
+           x="7"
+           y="6.9999995" />
+        <rect
+           style="fill:#ffffff;fill-opacity:1"
+           id="rect9"
+           width="1"
+           height="2.9999995"
+           x="7"
+           y="8" />
+      </g>
+    </g>
+  </g>
+</svg>

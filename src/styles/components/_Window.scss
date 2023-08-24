@@ -1,0 +1,92 @@
+// WINDOW BORDER STYLING
+// WINDOW BORDER STYLING
+// WINDOW BORDER STYLING
+
+.window {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	min-width: 10rem;
+	min-height: 10rem;
+
+	& .chisel {
+		display: none;
+	}
+
+	&--engraved .chisel {
+		display: unset;
+	}
+
+	&__titlebar {
+		display: flex;
+		height: var(--button-sizing);
+		background-color: var(--border-medium);
+
+		&__menu {
+			width: var(--button-sizing);
+			@include titlebar-component-properties;
+		}
+
+
+		&__header {
+			flex-grow: 1;
+			@include titlebar-component-properties;
+			@include border-mixin(var(--border-light), var(--border-dark));
+		}
+
+		&__exit {
+			width: var(--button-sizing);
+			@include titlebar-component-properties;
+		}
+	}
+
+	&__border {
+		position: absolute;
+		inset: -5px -5px;
+	}
+
+	&__content {
+		background-color: mediumaquamarine;
+		display: flex;
+		flex: 1;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@keyframes test {
+	from, 33% {
+		min-width: 12rem;
+	}
+
+	66%, to {
+		min-width: 22rem;
+	}
+}
+
+@keyframes test2 {
+	from, 33% {
+		min-height: 12rem;
+	}
+
+	66%, to {
+		min-height: 22rem;
+	}
+}
+
+
+// FILL CLASSES
+// FILL CLASSES
+// FILL CLASSES
+
+.fill-light {
+	fill: var(--border-light);
+}
+
+.fill-medium {
+	fill: var(--border-medium);
+}
+
+.fill-dark {
+	fill: var(--border-dark);
+}
