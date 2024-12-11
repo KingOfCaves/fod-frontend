@@ -1,0 +1,23 @@
+@use '../abstracts';
+
+.window__titlebar {
+	display: flex;
+	height: var(--button-sizing);
+	background-color: var(--border-medium);
+
+	&__menu {
+		width: var(--button-sizing);
+		@include abstracts.titlebar-component-properties;
+	}
+
+	&__header {
+		flex-grow: 1;
+		@include abstracts.titlebar-component-properties;
+		@include abstracts.border-mixin(var(--border-light), var(--border-dark));
+	}
+
+	&__exit {
+		width: var(--button-sizing);
+		@include abstracts.titlebar-component-properties;
+	}
+}

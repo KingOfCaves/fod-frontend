@@ -1,17 +1,21 @@
 <script lang="ts">
-    import WindowBorder from "$lib/components/WindowBorder.svelte"
-    import WindowTitlebar from "$lib/components/WindowTitlebar.svelte"
+	import WindowBorder from '$lib/components/WindowBorder.svelte';
+	import WindowTitlebar from '$lib/components/WindowTitlebar.svelte';
 
-    export let engraved: Boolean = false
+	let { children, engraved = false } = $props();
 </script>
 
 <div
-    class="window"
-    class:window--engraved={engraved}
+	class="window"
+	class:window--engraved={engraved}
 >
-    <WindowBorder />
-    <WindowTitlebar />
-    <div class="window__content">
-
-    </div>
+	<WindowBorder />
+	<WindowTitlebar />
+	<div class="window__content">
+		{@render children?.()}
+	</div>
 </div>
+
+<style lang="scss">
+	@use '../sass/components';
+</style>
